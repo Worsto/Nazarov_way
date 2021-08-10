@@ -8,18 +8,48 @@
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
-  <svg style="display: none">
-
+  <svg class="svg" style="display: none">
+    <symbol id="icon-logo" viewBox="0 0 58 22">
+      <path
+        d="M27.734 0l-5.676 17.073h-4.312l-3.817-11.56-3.94 11.56H5.7L0 0h4.164L8.08 12l4.09-12h3.717l3.965 12.098L23.892 0h3.842zM34.089 3.756c2.065 0 3.651.488 4.758 1.464 1.107.959 1.66 2.414 1.66 4.365v7.488H36.89V15.44c-.727 1.22-2.082 1.83-4.064 1.83-1.025 0-1.917-.171-2.677-.513-.744-.341-1.314-.813-1.71-1.415-.397-.601-.595-1.284-.595-2.048 0-1.22.463-2.18 1.388-2.878.942-.7 2.387-1.05 4.337-1.05h3.073c0-.828-.256-1.463-.768-1.902-.512-.455-1.28-.683-2.305-.683a6.72 6.72 0 00-2.106.342c-.678.211-1.256.504-1.735.878l-1.388-2.659c.727-.504 1.594-.894 2.602-1.17a12.029 12.029 0 013.148-.415zm-.298 10.951c.661 0 1.248-.146 1.76-.439a2.535 2.535 0 001.09-1.341v-1.342H33.99c-1.587 0-2.38.513-2.38 1.537 0 .488.19.878.57 1.17.397.277.934.415 1.611.415zM57 3.951l-6.023 13.927c-.611 1.512-1.371 2.577-2.28 3.195-.892.618-1.974.927-3.247.927-.694 0-1.38-.106-2.057-.317-.677-.212-1.23-.504-1.66-.878l1.412-2.707a3.37 3.37 0 002.181.829c.53 0 .959-.13 1.29-.39.33-.244.627-.659.892-1.244l.05-.122-5.776-13.22h3.99l3.743 8.903 3.767-8.903H57z"
+        fill="#141517" />
+      <path
+        d="M57.017 3.95l-6.022 13.927c-.612 1.512-1.372 2.577-2.28 3.195-.893.618-1.975.927-3.247.927-.694 0-1.38-.106-2.057-.317-.678-.211-1.231-.504-1.661-.878l1.413-2.707a3.368 3.368 0 002.18.829c.53 0 .96-.13 1.29-.39.33-.244.627-.659.892-1.244l.05-.122 1.957-4.317L53.3 3.95h3.717z"
+        fill="#FE7865" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 17 24" fill="none">
+      <path
+        d="M1.396 6.624c-.084-1.198.181-2.378.885-3.327.61-.86 1.404-1.33 2.361-1.605.807-.24 1.335.054 1.568.95.332 1.34.806 2.68.978 4.092.054.62-.347 1.5-.782 1.952-1.09 1.073-.864 1.854-.036 3.478.256.524.664 1.43 1.458 2.628.828 1.207 1.266 1.855 2.329 1.306 1.18-.594 2.041-.212 2.932.746.604.693 1.268 1.288 1.872 1.98.873 1.03.834 1.74.151 2.467-1.229 1.34-3.258 1.783-4.768.886-.834-.489-1.664-1.128-2.325-1.874-2.915-3.32-5.016-7.182-6.282-11.54a10.989 10.989 0 01-.34-2.139z"
+        stroke-width="2" stroke-miterlimit="10" />
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 16 16" fill="none">
+      <path d="M8 1v14M15 8l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-checkmark" viewBox="0 0 14 12">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M13.614.21a1 1 0 01.175 1.404l-7.774 10a1 1 0 01-1.477.112l-4.225-4a1 1 0 111.375-1.452l3.424 3.242L12.21.386a1 1 0 011.404-.175z" />
+    </symbol>
+    <symbol id="icon-asterisk" viewBox="0 0 6 7" width="6" height="7">
+      <path
+        d="M3.519 6.028l-.085-1.87 1.564 1.003.544-.918-1.649-.85 1.649-.85-.544-.935-1.564 1.003.085-1.87H2.448l.085 1.87L.952 1.608l-.527.935 1.649.85-1.649.85.527.918 1.581-1.003-.085 1.87h1.071z" />
+    </symbol>
+    <symbol id="icon-envelope" viewBox="0 0 26 20">
+      <path
+        d="M24.227 0H1.773C.768 0 0 .765 0 1.765v16.47C0 19.235.768 20 1.773 20h22.454C25.232 20 26 19.235 26 18.235V1.765C26 .765 25.232 0 24.227 0zm0 17l-4.668-4.647a.86.86 0 00-1.24 0 .85.85 0 000 1.235l4.667 4.647H3.014l4.668-4.647a.85.85 0 000-1.235.86.86 0 00-1.241 0L1.773 17V5.706l10.636 8a.955.955 0 00.532.176.955.955 0 00.532-.176l10.754-8V17zm0-15.235V3.47l-11.286 8.352L1.773 3.471V1.765h22.454z" />
+    </symbol>
   </svg>
 
   <header class="page-header">
     <div class="page__wrapper page-header__wrapper">
       <a class="page-header__logo-link" href="#">
-        <img src="img/logo.svg" width="57" height="22" alt="Логотип.">
+        <svg width="58" height="22">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
       </a>
       <nav class="page-header__nav">
         <ul class="page-header__nav-list">
@@ -27,7 +57,12 @@
           <li><a class="page__link page-header__nav-link" href="#">Цены</a></li>
         </ul>
       </nav>
-      <a class="page__tel-link page-header__tel-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <a class="page__tel-link page-header__tel-link" href="tel:+749978468446">
+        <svg class="page-header__icon-phone" width="17" height="24">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <span>+7 (499) -784-684-46</span>
+      </a>
     </div>
   </header>
   <main>
@@ -38,7 +73,11 @@
           горы, а также
           потрясающая красота
           природы.</p>
-        <button class="page__button main-promo__button">Cмотреть тур</button>
+        <button class="page__button main-promo__button">Cмотреть тур
+          <svg class="main-promo__icon-arrow" width="16" height="16">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </button>
       </div>
     </section>
     <section class="main-places">
@@ -122,7 +161,12 @@
             отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на
             все 100%!</p>
           <p class="main-prices__subheading">Свяжитесь с нами</p>
-          <a class="page__tel-link main-prices__tel-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a class="page__tel-link page-prices__tel-link" href="tel:+749978468446">
+            <svg width="17" height="24">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span>+7 (499) -784-684-46</span>
+          </a>
         </div>
         <ul class="main-prices__list prices-list">
           <li class="prices-list__list-item">
@@ -132,25 +176,65 @@
             </div>
             <p class="prices-list__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
             <ul class="prices-list__descriptions-list">
-              <li class="prices-list__descriptions-list-item prices-list__descriptions-list-item--design-fix">Разработанный маршрут с гидом группы</li>
-              <li class="prices-list__descriptions-list-item">Перелет, трансфер и проживание в отелях</li>
-              <li class="prices-list__descriptions-list-item">Завтраки, ужины в отелях и ланчи на природе</li>
-              <li class="prices-list__descriptions-list-item">Экскурсии по удивительно красивым местам Европы</li>
+              <li class="prices-list__descriptions-list-item prices-list__descriptions-list-item--design-fix">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>
+                Разработанный маршрут с гидом группы
+              </li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Перелет, трансфер и проживание в отелях
+              </li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Завтраки, ужины в отелях и ланчи на природе
+              </li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Экскурсии по удивительно красивым местам Европы
+              </li>
             </ul>
-            <button class="page__button prices-list__button">Купить тур сейчас</button>
+            <button class="page__button prices-list__button">
+              Купить тур сейчас
+            </button>
           </li>
           <li class="prices-list__list-item">
             <div class="prices-list__heading-box">
               <h3 class="prices-list__heading prices-list__heading--design-fix">Экономный</h3>
               <span class="prices-list__price">&#36;1399</span>
             </div>
-            <p class="prices-list__text prices-list__text--design-fix">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+            <p class="prices-list__text prices-list__text--design-fix">Ознакомьтесь с перечнем того, что входит в данный
+              пакет </p>
             <ul class="prices-list__descriptions-list">
-              <li class="prices-list__descriptions-list-item">Разработанный маршрут с гидом группы</li>
-              <li class="prices-list__descriptions-list-item">Перелет и трансфер</li>
-              <li class="prices-list__descriptions-list-item">Проживание в хостелах при отелях</li>
-              <li class="prices-list__descriptions-list-item">Только завтраки в отелях</li>
-              <li class="prices-list__descriptions-list-item">Экскурсии по удивительно красивым местам Европы</li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Разработанный маршрут с гидом группы
+              </li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Перелет и трансфер
+              </li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Проживание в хостелах при отелях
+              </li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Только завтраки в отелях
+              </li>
+              <li class="prices-list__descriptions-list-item">
+                <svg class="prices-list__icon-checkmark" width="14" height="12">
+                  <use xlink:href="#icon-checkmark"></use>
+                </svg>Экскурсии по удивительно красивым местам Европы
+              </li>
             </ul>
             <button class="page__button prices-list__button">Купить тур сейчас</button>
           </li>
@@ -163,7 +247,8 @@
           <h2 class="visually-hidden">Обратная связь</h2>
           <p class="main-feedback__heading">У Вас остались вопросы?</p>
           <p class="main-feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <input class="main-feedback__input main-feedback__input--tel" type="tel" name="user-tel" id="user-tel-input" placeholder="Введите 10 цифр номера" required>
+          <input class="main-feedback__input main-feedback__input--tel" type="tel" name="user-tel" id="user-tel-input"
+            placeholder="Введите 10 цифр номера" required>
           <input class="main-feedback__input" type="email" name="user-email" id="user-email-input" placeholder="E-mail">
           <button class="page__button main-feedback__button" type="submit">Отправить</button>
         </form>
@@ -193,8 +278,17 @@
     </section>
     <section>
       <h3>Наши контакты</h3>
-      <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <a href="mailto:puteshestviemechta@gmail.ru">
+        <svg class="page-header__icon-email" width="26" height="20">
+          <use xlink:href="#icon-envelope"></use>
+        </svg>
+        <span>puteshestviemechta@gmail.ru</span></a>
+      <a class="page__tel-link" href="tel:+749978468446">
+        <svg class="page-header__icon-phone" width="17" height="24">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <span>+7 (499) -784-684-46</span>
+      </a>
     </section>
     <section>
       <h3>Корпоративные путешествия</h3>
