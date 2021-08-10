@@ -1,0 +1,39 @@
+:root {
+  --main-accent: #fe7865;
+  --hover-accent: #f17d4b;
+  --basic-type: #2c2e3f;
+  --contrast-type: #141517;
+  --invert-type: #ffffff;
+  --accent-type: var(--accent-type);
+  --specific-type: black;
+  --clear-background: #ffffff;
+  --accent-underline: var(--main-accent);
+  --main-underline: var(--basic-type);
+  --main-border: rgba(44, 46, 63, 0.3);
+
+  --decorative-divider: var(--light-background);
+  --footer-mobile-divider: #e5e5e5;
+  --main-theme: #63d1bb;
+  --main-theme-dark: #46c1ae;
+  --theme-lines: #62d1ba;
+  --theme-lines-dark: var(--main-theme-dark);
+  --theme-icons: var(--theme-lines);
+  --category-light-background: var(--main-theme);
+  --category-dark-background: #56c3b2;
+  --category-icon: #149080;
+  --basic-border: var(--light-type);
+  --button-hover-background: var(--light-type);
+  --contrast-border: var(--basic-type);
+  --thin-border: #ececec;
+  --link-type-hover: #00000099;
+  --link-opacity-hover: 0.6;
+  --link-type-down: #0000004d;
+  --contrast-type-down: #ffffff4d;
+  --link-opacity-down: 0.3;
+  --modal-button-hover: #4444444d;
+}
+
+
+$desktop-width: 1024px;
+$tablet-width: 768px;
+$mobile-width-only: 767px;

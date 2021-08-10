@@ -1,0 +1,31 @@
+.main-promo {
+  background-image: url("../../img/main-bg.jpg");
+  background-size: cover;
+  background-position: center 0;
+}
+
+.main-promo__wrapper {
+  padding-top: 187px;
+  padding-left: 700px;
+  min-height: 860px;
+  color: var(--invert-type);
+}
+
+.main-promo__heading {
+  letter-spacing: -1.11px;
+
+  &::after {
+    display: none;
+  }
+}
+
+.main-promo__text {
+  margin-top: 28px;
+  max-width: 390px;
+  line-height: 170%;
+}
+
+.main-promo__button {
+  margin-top: 33px;
+  padding-right: 178px;
+}

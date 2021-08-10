@@ -1,0 +1,42 @@
+.places-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.places-list__item {
+  margin-right: 60px;
+  margin-bottom: 100px;
+
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.places-list__link {
+  height: 430px;
+  width: 350px;
+  display: flex;
+  background-color: tomato;
+  color: var(--main-type);
+  text-decoration: none;
+}
+
+.places-list__label {
+  display: flex;
+  margin: 0 auto;
+  margin-top: auto;
+  background-color: var(--clear-background);
+  letter-spacing: -0.41px;
+  font-size: 24px;
+  font-weight: 500;
+  min-width: 215px;
+  min-height: 60px;
+  justify-content: center;
+  align-items: center;
+}
