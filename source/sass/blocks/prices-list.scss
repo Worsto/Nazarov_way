@@ -13,6 +13,12 @@
   display: flex;
   flex-direction: column;
   background-color: var(--clear-background);
+
+  &:hover, &:focus-within {
+    border-width: 3px;
+    border-color: var(--main-accent);
+    padding: 28px;
+  }
 }
 
 .prices-list__heading-box {

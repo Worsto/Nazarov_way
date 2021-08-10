@@ -26,6 +26,10 @@
 .page__link {
   color: var(--contrast-type);
   text-decoration: none;
+
+  &:hover, &:focus {
+    color: var(--main-accent);
+  }
 }
 
 .page__tel-link {
@@ -33,6 +37,10 @@
   font-weight: 400;
   padding-left: 47px;
   position: relative;
+
+  &:hover, &:focus {
+    color: var(--main-accent);
+  }
 }
 
 .page__heading {
@@ -91,4 +99,8 @@
   font-family: inherit;
   box-sizing: border-box;
   text-decoration: none;
+
+  &:hover, &:focus {
+    background-color: var(--hover-accent);
+  }
 }
