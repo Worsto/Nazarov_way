@@ -1,0 +1,29 @@
+.page-footer {
+  margin-top: 160px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+}
+
+.page-footer__section {
+  width: 387px;
+  position: relative;
+
+  &:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--footer-color);
+    left: 0;
+  }
+}
+
+.page-footer__heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 6px;
+}

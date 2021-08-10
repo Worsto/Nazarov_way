@@ -133,7 +133,8 @@
               царящая в монастырях Метеоры.</p>
             <picture class="slide__image-box">
               <source type="image/webp" srcset="img/greece-bg@1x.webp, img/greece-bg@2x.webp 2x">
-              <img class="slide__image" width="430" height="596" src="img/greece-bg@1x.jpg" alt="Вид на монастырь «Метеора»">
+              <img class="slide__image" width="430" height="596" src="img/greece-bg@1x.jpg"
+                alt="Вид на монастырь «Метеора»">
             </picture>
             <button class="page__button slide__button">Купить тур сейчас</button>
             <div class="slide__review">
@@ -144,7 +145,8 @@
                   потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю
                   света!
                 </p>
-                <cite class="slide__review-cite"><img class="slide__review-image" src="img/user-avatar.jpg" alt="Аватар: Влада Голицина"><span class="slide__review-author">Влада Голицина</span></cite>
+                <cite class="slide__review-cite"><img class="slide__review-image" src="img/user-avatar.jpg"
+                    alt="Аватар: Влада Голицина"><span class="slide__review-author">Влада Голицина</span></cite>
               </blockquote>
             </div>
           </li>
@@ -163,8 +165,8 @@
             отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на
             все 100%!</p>
           <p class="main-prices__subheading">Свяжитесь с нами</p>
-          <a class="page__tel-link page-prices__tel-link" href="tel:+749978468446">
-            <svg width="17" height="24">
+          <a class="page__tel-link main-prices__tel-link" href="tel:+749978468446">
+            <svg class="main-prices__icon-phone" width="17" height="24">
               <use xlink:href="#icon-phone"></use>
             </svg>
             <span>+7 (499) -784-684-46</span>
@@ -249,54 +251,60 @@
           <h2 class="visually-hidden">Обратная связь</h2>
           <p class="main-feedback__heading">У Вас остались вопросы?</p>
           <p class="main-feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <input class="main-feedback__input main-feedback__input--tel" type="tel" name="user-tel" id="user-tel-input"
-            placeholder="Введите 10 цифр номера" required>
-          <input class="main-feedback__input" type="email" name="user-email" id="user-email-input" placeholder="E-mail">
+          <fieldset class="main-feedback__fieldset">
+            <label class="main-feedback__label main-feedback__label--tel main-feedback__label--required" for="user-tel-input">Телефон</label>
+            <input class="main-feedback__input main-feedback__input--tel" type="tel" name="user-tel" id="user-tel-input" placeholder="Введите 10 цифр номера" required>
+            <label class="main-feedback__label" for="user-email-input">E-mail</label>
+            <input class="main-feedback__input" type="email" name="user-email" id="user-email-input"
+              placeholder="E-mail">
+          </fieldset>
           <button class="page__button main-feedback__button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
   </main>
-  <footer>
-    <section>
-      <h3>Следующие путешествия</h3>
-      <ul>
-        <li><a href="#">Марсель</a></li>
-        <li><a href="#">Ним</a></li>
-        <li><a href="#">Монпелье</a></li>
-        <li><a href="#">Барселона</a></li>
-        <li><a href="#">Пальма</a></li>
-        <li><a href="#">Сардиния</a></li>
-        <li><a href="#">Палермо</a></li>
-        <li><a href="#">Катания</a></li>
-        <li><a href="#">Неаполь</a></li>
-        <li><a href="#">Рим</a></li>
-        <li><a href="#">Корс</a></li>
-        <li><a href="#">Ницца</a></li>
-        <li><a href="#">Монако</a></li>
-        <li><a href="#">Динь-ле-Бен</a></li>
-        <li><a href="#">Гренобль</a></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Наши контакты</h3>
-      <a href="mailto:puteshestviemechta@gmail.ru">
-        <svg class="page-header__icon-email" width="26" height="20">
-          <use xlink:href="#icon-envelope"></use>
-        </svg>
-        <span>puteshestviemechta@gmail.ru</span></a>
-      <a class="page__tel-link" href="tel:+749978468446">
-        <svg class="page-header__icon-phone" width="17" height="24">
-          <use xlink:href="#icon-phone"></use>
-        </svg>
-        <span>+7 (499) -784-684-46</span>
-      </a>
-    </section>
-    <section>
-      <h3>Корпоративные путешествия</h3>
-      <p>Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию,
-        помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
-    </section>
+  <footer class="page-footer">
+    <div class="page__wrapper page-footer__wrapper">
+      <section class="page-footer__section footer-list">
+        <h3 class="page-footer__heading footer-list__heading">Следующие путешествия</h3>
+        <ul class="footer-list__list">
+          <li class="footer-list__list-item footer-list__first-column"><a href="#">Марсель</a></li>
+          <li class="footer-list__list-item footer-list__first-column"><a href="#">Ним</a></li>
+          <li class="footer-list__list-item footer-list__first-column"><a href="#">Монпелье</a></li>
+          <li class="footer-list__list-item footer-list__first-column"><a href="#">Барселона</a></li>
+          <li class="footer-list__list-item footer-list__first-column"><a href="#">Пальма</a></li>
+          <li class="footer-list__list-item footer-list__second-column"><a href="#">Сардиния</a>
+          <li class="footer-list__list-item footer-list__second-column"><a href="#">Палермо</a></li>
+          <li class="footer-list__list-item footer-list__second-column"><a href="#">Катания</a></li>
+          <li class="footer-list__list-item footer-list__second-column"><a href="#">Неаполь</a></li>
+          <li class="footer-list__list-item footer-list__second-column"><a href="#">Рим</a></li>
+          <li class="footer-list__list-item footer-list__third-column"><a href="#">Корс</a></li>
+          <li class="footer-list__list-item footer-list__third-column"><a href="#">Ницца</a></li>
+          <li class="footer-list__list-item footer-list__third-column"><a href="#">Монако</a></li>
+          <li class="footer-list__list-item footer-list__third-column"><a href="#">Динь-ле-Бен</a></li>
+          <li class="footer-list__list-item footer-list__third-column"><a href="#">Гренобль</a></li>
+        </ul>
+      </section>
+      <section class="page-footer__section footer-contacts">
+        <h3 class="page-footer__heading">Наши контакты</h3>
+        <a class="footer-contacts__email-link" href="mailto:puteshestviemechta@gmail.ru">
+          <svg class="footer-contacts__icon-email" width="26" height="20">
+            <use xlink:href="#icon-envelope"></use>
+          </svg>
+          <span>puteshestviemechta@gmail.ru</span></a>
+        <a class="page__tel-link footer-contacts__tel-link" class="page__tel-link" href="tel:+749978468446">
+          <svg class="footer-contacts__icon-phone" width="17" height="24">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <span>+7 (499) -784-684-46</span>
+        </a>
+      </section>
+      <section class="page-footer__section footer-corporate">
+        <h3 class="page-footer__heading">Корпоративные путешествия</h3>
+        <p class="footer-corporate__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию,
+          помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+      </section>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>

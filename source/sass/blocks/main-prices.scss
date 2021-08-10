@@ -47,3 +47,10 @@
   color: var(--specific-type);
   text-decoration: none;
 }
+
+.main-prices__icon-phone {
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  stroke: var(--main-accent);
+}

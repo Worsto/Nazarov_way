@@ -10,7 +10,7 @@
 }
 
 .main-promo__wrapper {
-  padding-top: 187px;
+  padding-top: 186px;
   padding-left: 700px;
   min-height: 860px;
   color: var(--invert-type);
@@ -31,10 +31,14 @@
 }
 
 .main-promo__button {
-  margin-top: 33px;
+  margin-top: 35px;
   padding-right: 178px;
+  position: relative;
 }
 
 .main-promo__icon-arrow {
   stroke: var(--invert-type);
+  position: absolute;
+  right: 39px;
+  top: 30px;
 }

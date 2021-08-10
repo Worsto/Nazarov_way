@@ -1,0 +1,35 @@
+.footer-contacts {
+  padding-left: 65px;
+  flex-grow: 1;
+}
+
+.footer-contacts__email-link {
+  display: block;
+  color: var(--accent-type);
+  font-size: 14px;
+  position: relative;
+  margin-top: 33px;
+  padding-left: 41px;
+}
+
+.footer-contacts__icon-email {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  fill: var(--footer-color);
+}
+
+.footer-contacts__tel-link {
+  display: block;
+  color: var(--accent-type);
+  font-size: 16px;
+  margin-top: 31px;
+  padding-left: 41px;
+}
+
+.footer-contacts__icon-phone {
+  stroke: var(--footer-color);
+  position: absolute;
+  top: -8px;
+  left: 7px;
+}

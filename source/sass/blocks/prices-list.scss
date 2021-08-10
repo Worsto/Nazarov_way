@@ -65,6 +65,7 @@
 
 .prices-list__descriptions-list-item {
   margin-bottom: 16.5px;
+  position: relative;
 
   &--design-fix {
     margin-bottom: 7px;
@@ -73,6 +74,9 @@
 
 .prices-list__icon-checkmark {
   fill: var(--main-accent);
+  position: absolute;
+  top: 9px;
+  left: -28px;
 }
 
 .prices-list__button {
