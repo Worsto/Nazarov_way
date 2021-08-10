@@ -2,11 +2,29 @@
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .page-header__logo-link {
   padding-top: 19px;
   padding-bottom: 15px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 17px;
+    padding-left: 21px;
+    padding-bottom: 12px;
+  }
+}
+
+.page-header__logo-icon {
+  @media (max-width: $desktop-width) {
+    height: 17px;
+    width: 44px;
+  }
 }
 
 .page-header__nav {
@@ -28,6 +46,11 @@
   padding-bottom: 18px;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
 }
 
 .page-header__tel-link {
@@ -36,6 +59,10 @@
   padding-right: 3px;
   color: var(--contrast-type);
   margin-left: 43px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__icon-phone {

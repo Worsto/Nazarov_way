@@ -1,9 +1,11 @@
 .page-footer {
   margin-top: 160px;
+  padding-bottom: 75px;
 }
 
 .page-footer__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-footer__section {

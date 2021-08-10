@@ -49,6 +49,16 @@
     width: 228px;
     margin-top: 29px;
     background-color: var(--accent-underline);
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: normal;
   }
 }
 
@@ -57,6 +67,10 @@
   letter-spacing: -0.47px;
   line-height: 28px;
   font-weight: 400;
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .page__button {
@@ -76,4 +90,5 @@
   cursor: pointer;
   font-family: inherit;
   box-sizing: border-box;
+  text-decoration: none;
 }
