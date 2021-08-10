@@ -158,11 +158,11 @@ exports.scripts = scripts;
 const build = (done) => {
   gulp.series(
     clean,
+    images,
+    createWebp,
     copy,
     styles,
     stylesMin,
-    images,
-    createWebp,
     html,
     scripts
   )(done)

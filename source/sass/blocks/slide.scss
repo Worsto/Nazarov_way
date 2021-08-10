@@ -5,10 +5,16 @@
   grid-template-rows: repeat(2, max-content) 115px;
 }
 
-.slide__image {
+.slide__image-box {
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: -1;
+}
+
+.slide__image {
+  object-fit: cover;
+  height: 596px;
+  width: 430px;
 }
 
 .slide__heading {
@@ -29,8 +35,8 @@
 }
 
 .slide__button {
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-top: 21px;
+  margin-bottom: 19px;
   margin-right: auto;
   margin-left: 0;
 }

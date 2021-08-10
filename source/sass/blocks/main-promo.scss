@@ -1,7 +1,12 @@
 .main-promo {
-  background-image: url("../../img/main-bg.jpg");
+  background-image: url("../../img/main-bg@1x.webp");
   background-size: cover;
   background-position: center 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/main-bg@2x.webp");
+  }
+
 }
 
 .main-promo__wrapper {

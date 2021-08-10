@@ -27,6 +27,51 @@
   text-decoration: none;
 }
 
+.places-list__link--greece {
+  background-image: url("../../img/greece-list@1x.webp");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/greece-list@2x.webp");
+  }
+}
+
+.places-list__link--albania {
+  background-image: url("../../img/albania-list@1x.webp");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/albania-list@2x.webp");
+  }
+}
+
+.places-list__link--macedonia {
+  background-image: url("../../img/macedonia-list@1x.webp");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/macedonia-list@2x.webp");
+  }
+}
+
+.places-list__link--montenegro {
+  background-image: url("../../img/montenegro-list@1x.webp");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/montenegro-list@2x.webp");
+  }
+}
+
+.places-list__link--croatia {
+  background-image: url("../../img/croatia-list@1x.webp");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/croatia-list@2x.webp");
+  }
+}
+
 .places-list__label {
   display: flex;
   margin: 0 auto;
